@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('../images/background.jpg');
+    background-image: url('images.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,3 +124,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
