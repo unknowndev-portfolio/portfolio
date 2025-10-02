@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - System Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience - System Engineer Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="education.html">Education</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <h2>Professional Experience</h2>
+<nav>
+  <div class="hamburger">☰</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="education.html">Education</a></li>
+  </ul>
+</nav>
 
-        <div class="job">
-            <h3>System Engineer – [Company Name]</h3>
-            <span>[Start Date] – Present | City</span>
-            <ul>
-                <li>Administered and maintained servers, ensuring 99.9% uptime.</li>
-                <li>Automated routine tasks using Bash and Python scripts.</li>
-                <li>Managed network configurations, firewall policies, and VPN access.</li>
-                <li>Implemented backup and disaster recovery solutions.</li>
-                <li>Collaborated with development teams to deploy cloud infrastructure.</li>
-            </ul>
-        </div>
+<div class="container">
+  <h2>Professional Experience</h2>
 
-        <div class="job">
-            <h3>Junior System Engineer – [Previous Company]</h3>
-            <span>[Start Date] – [End Date] | City</span>
-            <ul>
-                <li>Assisted in server installations, updates, and troubleshooting.</li>
-                <li>Monitored network performance and resolved connectivity issues.</li>
-                <li>Supported system migrations and software deployment projects.</li>
-            </ul>
-        </div>
+  <div class="job">
+    <h3>System Engineer – [Company Name]</h3>
+    <span>[Start Date] – Present | City</span>
+    <ul>
+      <li>Administered and maintained servers, ensuring 99.9% uptime.</li>
+      <li>Automated routine tasks using Bash and Python scripts.</li>
+      <li>Managed network configurations, firewall policies, and VPN access.</li>
+      <li>Implemented backup and disaster recovery solutions.</li>
+      <li>Collaborated with development teams to deploy cloud infrastructure.</li>
+    </ul>
+  </div>
 
-        <div class="footer">
-            &copy; 2025 NAME. All rights reserved.
-        </div>
-    </div>
+  <div class="job">
+    <h3>Junior System Engineer – [Previous Company]</h3>
+    <span>[Start Date] – [End Date] | City</span>
+    <ul>
+      <li>Assisted in server installations, updates, and troubleshooting.</li>
+      <li>Monitored network performance and resolved connectivity issues.</li>
+      <li>Supported system migrations and software deployment projects.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Harith Achu. All rights reserved.
+  </div>
+</div>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navUL = document.querySelector('nav ul');
+hamburger.addEventListener('click', () => {
+    navUL.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
