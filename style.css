@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('images.jpeg');
+    background-image: url('../images/background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #0d0d0d; 
     color: white;
 }
 nav {
@@ -34,9 +35,34 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1c98db;
+    margin-left: 20px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
 .container {
     max-width: 900px;
-    margin: 100px auto 40px auto; 
+    margin: 100px auto 40px auto; /* top margin for nav */
     padding: 40px;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -48,6 +74,7 @@ nav ul li a:hover {
     gap: 20px;
     margin-bottom: 20px;
 }
+
 .header img {
     width: 120px;
     height: 120px;
@@ -62,8 +89,6 @@ nav ul li a:hover {
 }
 .header p {
     margin: 5px 0;
-    font-size: 16px;
-    color: white;
 }
 h2 {
     color: #1c98db;
@@ -94,21 +119,7 @@ a {
     color: #1c98db;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .header img {
-        margin-bottom: 10px;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-
